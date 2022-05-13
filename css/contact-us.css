@@ -1,0 +1,264 @@
+
+/* //////////////////////////////////////////////////// */
+.contact-us-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    left: -780px;
+    transition: all 0.4s ease;
+  
+  }
+  .contact-us-button {
+    font-size: 40px;
+    color: gray;
+    position: absolute;
+    left: 0;
+    margin-top: 4%;
+    margin-left: 5%;
+  }
+  .contact-us {
+    display: flex;
+    background-color: #fff !important;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .contact-us-left-pannel {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .contact-us-left-pannel img {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 20%;
+    opacity: 0.5;
+  }
+  
+  .contact-us-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    margin-left: 47%;
+    top: 5%;
+  }
+  
+  .contact-us-title {
+    color: gray;
+    font-size: 25px;
+    font-family: Segoe UI;
+    font-weight: bolder;
+    width: 100%;
+  }
+  
+  .contact-us-red-line {
+    width: 100px;
+    height: 3px;
+    background-color: red;
+    margin-top: 5%;
+  }
+  
+  .contact-us-information {
+    width: 80%;
+    height: 90%;
+    margin-left: 20%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+  }
+  
+  .contact-us-first-paragraph {
+    font-size: 90;
+    color: gray;
+    font-family: Segoe UI;
+    font-weight: bolder;
+  }
+  
+  .contact-us-second-paragraph {
+    font: size 12;
+    color: gray;
+    font-family: Segoe UI;
+    max-width: 80%;
+  }
+  
+  .contact-us-name-button {
+    height: 28px;
+    width: 280px;
+    color: gray;
+    font-size: 10;
+    font-family: Segoe UI;
+    background-color: #fff !important;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+  }
+  .contact-us-name-button:focus {
+    outline: none;
+  }
+  .contact-us-mail-button {
+    height: 28px;
+    width: 280px;
+    color: gray;
+    font-size: 10;
+    font-family: Segoe UI;
+    background-color: #fff !important;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .contact-us-mail-button:focus {
+    outline: none;
+  }
+  .contact-us-submit-button {
+    height: 28px;
+    width: 283px;
+    color: #fff !important;
+    font-size: 10;
+    font-family: Segoe UI;
+    background-color: gray;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .contact-us-submit-button:focus {
+    outline: none;
+  }
+  
+  .contact-us-right-pannel {
+    width: 20%;
+    height: 100vh;
+    background-color: #fff !important;
+    position: relative;
+    display: flex;
+  }
+  
+  .contact-us-right-pannel img {
+    width: 100%;
+    height: 20%;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 5%;
+    /* left: 5%; */
+  }
+  
+  .contact-us-side-title {
+    font-size: 140px;
+    font-family: Segoe UI;
+    color: gray;
+    font-weight: bolder;
+    transform: rotate(270deg);
+    opacity: 0.3;
+    margin-left: 15%;
+  }
+  
+  .contact-us-split {
+      position: relative;
+      top: 0;
+      width: 60%;
+      height: 100vh;
+      display: relative;
+      right: -50%;
+      transition: all 0.4s ease;
+    
+    }
+    .contact-us-box {
+        position: relative;
+        right: 0;
+        transition: all 0.7s ease;
+    }
+  /*/////////// responsivee ////////////*/
+  
+  @media screen and (max-width: 1200px) {
+    .contact-us-right-pannel {
+      display: none;
+    }
+    .contact-us-header {
+      font-size: 85%;
+      top: 5%;
+    }
+    .contact-us-information {
+      font-size: 90%;
+      top: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 15%;
+    }
+    .contact-us-second-paragraph {
+      margin-bottom: 20%;
+    }
+  }
+  
+  @media (max-width: 610px) and (min-width: 603px) {
+    .contact-us-title {
+      margin-right: 10%;
+    }
+    .contact-us-red-line {
+      margin-right: 6%;
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 1200px) and (min-width: 655px) {
+    .contact-us-information {
+      top: 0%;
+    }
+  }
+  
+  @media screen and (max-width: 655px) {
+    .contact-us-header {
+      font-size: 64%;
+      top: 5%;
+    }
+    .contact-us-information {
+      font-size: 80%;
+      bottom: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 125%;
+      margin-top: 0%;
+      margin-left: 15%;
+    }
+  }
+  
+  @media screen and (max-width: 607px) {
+    .contact-us-title {
+      font-size: 200%;
+      margin-right: 40%;
+    }
+    .contact-us-red-line {
+      width: 50%;
+      margin-right: 36%;
+    }
+    .contact-us-information {
+      width: 125%;
+      margin-top: 0%;
+      margin-left: 15%;
+    }
+    .contact-us-first-paragraph {
+      font-size: 160%;
+    }
+    .contact-us-name-button {
+      width: 75%;
+    }
+    .contact-us-mail-button {
+      width: 75%;
+    }
+    .contact-us-submit-button {
+      width: 77%;
+    }
+  }
+  
+  /* //////////////////////////////// */
+  

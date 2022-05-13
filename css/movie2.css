@@ -1,0 +1,42 @@
+
+.movie-card-1 img {
+    margin-top: 10%;
+    width: 27%;
+    position: relative;
+    left: 71%;
+}
+.movie-card-2 img {
+    margin-top: 6%;
+    width: 80%;
+    position: relative;
+    left: 25%;
+}
+.movie-card-3 img {
+    margin-top: 33%;
+    position: relative;
+    width: 36%;
+    left: 23%;
+}
+.movie-card-4 img {
+    margin-top: 6%;
+    position: relative;
+    width: 43%;
+    left: 33%;
+}
+.movie-card-5 img {
+    margin-top: 26%;
+    width: 50%;
+    position: relative;
+    left: 44%;
+}
+.movie-card-6 img {
+    margin-top: 30%;
+    position: relative;
+    width: 75%;
+}
+.movie-card-7 img {
+    margin-top: 50%;
+    position: relative;
+    width: 85%;
+    left: 7%;
+}

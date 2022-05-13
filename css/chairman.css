@@ -1,0 +1,79 @@
+
+/* ///////////////////////////////  chairman  ////////////////////////////////////// */
+
+.chairman-section {
+    width: 100vw !important;
+    /* width: 19.22; */
+    height: 100vh;
+    top: 0px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .chairman-header {
+    color: rgb(0, 0, 0);
+    letter-spacing: 1.6px;
+    font-size: 3.4rem;
+    font-weight: 600;
+    margin-top: 1%;
+    margin-bottom: -20px;
+  }
+  /* .chairman-header:after {
+      content: "";
+      border: 2px solid red;
+      display: block;
+      width: 3%;
+      margin-left: 48%;
+  } */
+  
+  .chairman-sub-header {
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: -10px;
+  }
+  
+  .chairman-hidden-paragraph {
+    width: 300px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 1.2px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin-top: 200px;
+    bottom: 0;
+    top: -20%;
+    /* background: linear-gradient(#00000049, #ffffff); */
+    width: 40%;
+  }
+  
+  .chairman-hr-line {
+    width: 100px;
+    border: 4px solid rgb(255, 255, 255);
+    border-bottom: 0px;
+    margin-bottom: -25px;
+    margin-top: 15px;
+  }
+  
+  .myclass {
+    opacity: 1;
+    animation-name: paragraph-animation;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    position: relative;
+  }
+  
+  @keyframes paragraph-animation {
+    from {
+      transform: translateY(500px);
+      opacity: 0.5;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }

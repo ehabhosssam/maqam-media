@@ -1,0 +1,373 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url(https://fonts.googleapis.com/css2?family=Tajawal:wght@500&family=Ubuntu:ital,wght@1,500&display=swap);
+@import './merge-style0.0.1.scss';
+// @import './showreel.scss';
+@import './music.scss';
+body {
+    box-sizing: border-box;
+    perspective: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none !important;
+    height: 100vh;
+}
+
+video {
+    padding-top: 15%;
+    transform-style: preserve-3d;
+}
+
+.title {
+    position: absolute;
+    font-size: 170px;
+    top: 45%;
+    left: 15%;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.658);
+    color: transparent;
+    transform-style: preserve-3d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.media {
+    min-height: 80vh;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.container {
+    height: 100vh !important;
+    width: 100vw !important;
+    transform-style: preserve-3d;
+}
+
+.button {
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #8d8d8d60;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+    transition-property: height, width, backdrop-filter, background-color;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border: none;
+    color: #fff;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.full {
+    padding-top: 0%;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.corser {
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #8d8d8d60;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+    transition-property: height, width, backdrop-filter, background-color;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border: none;
+    color: #fff;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+
+video::-webkit-media-controls {
+    display: none;
+}
+
+.fullScreen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 110vw;
+    height: 130vh;
+    padding-top: 0%;
+    transform-style: flat;
+    background-size: cover;
+}
+
+.cursor {
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #8d8d8d60;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+    transition-property: height, width, backdrop-filter, background-color;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    background-color: white !important;
+    border: none;
+    color: #000 !important;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.widthfull {
+    max-width: 3000px !important;
+}
+
+@media only screen and (max-width: 900px) {
+    .title {
+        font-size: 60px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.658);
+    }
+    .widthfull {
+        position: fixed !important;
+        top: 0;
+        bottom: 0;
+        width: 200vw;
+        height: 100vh;
+        max-width: 3000px !important;
+    }
+}
+
+//image hover effect 
+.image-contain {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    transition: all 0.6s ease;
+}
+
+.imageHoverEffect {
+    position: fixed;
+    height: 100vh;
+}
+
+.image3d {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    display: none;
+}
+
+.image3d2 {
+    opacity: 0;
+    display: none;
+}
+
+// .nothing {
+//   width: 100px;
+//   height: 100px;
+//   position: fixed;
+//   top:20%;
+//   left: 10px;
+// }
+// .storke {
+//   width: 100px;
+//   height: 100px;
+//   position: fixed;
+//   top:20%;
+//   left: 10px;
+//   z-index: 100;
+// }
+// .nothing2 {
+//   width: 100%;
+//   height: 100vh;
+//   position: fixed;
+//   transition: all 0.8s ease-in;
+//   animation: move 5s ;
+//   background-color: transparent;
+//   top: 0;
+//   left: 0;
+//   border: 15px solid;
+//   border-image-source: url(../media/depth.jpg);
+//   border-image-slice: 60 30;
+//   border-radius: 50%;
+//   pointer-events: none;
+// }
+// .nothing2 {
+//   display: block;
+//   width: 2px;
+//   height: 2px;
+//   border-radius: 50%;
+//   box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+//   animation: pulse 2s ;
+// }
+//omar task " drag and scroll" 
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+* {
+    -webkit-user-drag: none;
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 8000px;
+    animation-delay: 2000ms;
+}
+
+body::-webkit-scrollbar-thumb {
+    overflow-y: hidden;
+    transition: all 0.5s;
+}
+
+.outercontainer {
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-image: url("polygonexample.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: none;
+}
+
+.container img {
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+// .storke2 {
+//   width: 400px;
+//   height: 200px;
+//   background: #222;
+//   background-color: #222;
+//   border: 3px solid #333;
+//   position: relative;
+//   transform: translateZ(20px);
+//   transform: translateZ(90px);
+//   transform: skewX(18deg);
+// }
+.center {
+    background: rgba(0, 0, 0, 0);
+    animation: pulse1 4s infinite;
+    transform: rotateX(10deg);
+    position: absolute;
+    margin: 20px auto;
+    top: 150px;
+    width: 900vw;
+    border-radius: 50%;
+}
+
+.floar {
+    background: rgba(0, 0, 0, 0);
+    animation: pulse 3s infinite;
+    transform: rotateX(88deg);
+    border-radius: 50%;
+}
+
+.bottom {
+    background: rgba(0, 0, 0, 0);
+    transform: rotateX(140deg);
+    bottom: -40px;
+    position: absolute;
+    margin: 20px auto;
+    width: 900vw;
+    border-radius: 50%;
+}
+
+@keyframes pulse {
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(247, 247, 247, 0.4);
+        box-shadow: 0 0 0 0 rgb(224, 221, 211);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 30vh rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 30vh rgba(204, 169, 44, 0);
+    }
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    }
+}
+
+@keyframes pulse1 {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(247, 247, 247, 0.4);
+        box-shadow: 0 0 0 0 rgb(224, 221, 211);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 30vh rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 30vh rgba(204, 169, 44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    }
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: none !important;
+    width: 12000px;
+}

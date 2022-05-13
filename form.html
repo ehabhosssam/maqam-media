@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-sca
+    le=1.0, maximum-scale=1.0,
+    user-scalable=no" />
+    <meta name="description" content="Tel: +20 1066666613
+    E-mail: info@maqamstudios.com 
+    Address: 3 El Nakheel St.El Mohandseen, Cairo, Egypt. 
+    ">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="./css/form.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="icon" href="./media/images/maqam_fav_icon.png" type="image/gif" sizes="16x16">
+    <title>Maqam Studios | Contact Us </title>
+</head>
+
+<body>
+
+
+    <div class="container " id="fullpage">
+
+        <div class="burger-wrapper">
+            <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Artboard-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                    stroke-linecap="round">
+                    <g id="Group" transform="translate(12.000000, 29.000000)" fill-rule="nonzero" stroke-width="4">
+                        <path class="line" id="line-middle" d="M13,20 L63,20" stroke="#fff" stroke-linejoin="round">
+                        </path>
+                        <path class="line" id="line-top"
+                            d="M63,1 L13.347708,1 C4.449236,1 0,4.16666667 0,10.5 C0,16.8333333 4.449236,20 13.347708,20 L59,20"
+                            stroke="#fff"></path>
+                        <path class="line" id="line-bottom"
+                            d="M42,68 L75,68 C81.6666667,67 85,63.8333333 85,58.5 C85,53.1666667 81.6666667,50 75,49 L30,49"
+                            transform="translate(-13.000000, -29.000000)" stroke="#fff"></path>
+                    </g>
+                </g>
+            </svg>
+
+        </div>
+
+        <ul class="menu">
+            <li>
+                <a href='index.html' class="nav-items1">HOME</a>
+            </li>
+            <li>
+                <a href='careers.html' class="nav-items2">CAREERS</a>
+            </li>
+        </ul>
+        <section class="static-bg"></section>
+        <section class="static-btns">
+            <div class="logo">
+                <img src="./media/images/Maqam Studios Final-1.png">
+            </div>
+            <div class="nav">
+                <div class=" item nav-home">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class=" item nav-careers">
+                    <a href="careers.html">CAREERS</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-us-form" id="contact-us">
+
+            <p class="text-above-img">MEIGHT REPRESENTS</p>
+            <p class="contact-us-background">CONTACT US </p>
+            <img class="form-maqam-lion" src="./media/images/maqam_new_logo.png">
+            <div class="contact-us-center">
+
+
+                <h2 class="contact-us-sub-header">GET IN TOUCH WITH US</h2>
+
+                <form class="form">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-field" id="contact-name" placeholder="Enter your Name">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-field " id="contact-email" placeholder="Enter your Mail">
+                    <label class="form-label">Message</label>
+                    <input type="text" class="form-field " id="contact-message" placeholder="What Can We Help You With ?">
+                    <button type="submit" class="form-button " onclick="sendEmail()">SUBMIT</button>
+                </form>
+
+            </div>
+
+        </section>
+
+        <div id="snackbar">Message Sent Successfully</div>
+        <div class="info-holder">
+            <div class="company-info-1">
+                <p class="form-company-info">3 El Nakheel., ElMohandseen
+                    <br>Mob: 01066666613</p>
+            </div>
+            <div class="company-info-2">
+                <p class="form-company-info">
+                    Fax: 02-336504048
+                    <br> E-mail: maqamofficial@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-social">
+        <a class="form-social-icon" href="#"><i class="fab fa-facebook"></i></a>
+        <a class="form-social-icon" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="form-social-icon" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="form-social-icon" href="#"><i class="fab fa-linked-in"></i></a>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    </script>
+    <script type="text/javascript">
+        function sendEmail() {
+            var name = document.getElementById("contact-name").value;
+            var email = document.getElementById("contact-email").value;
+            var message = document.getElementById("contact-message").value;
+
+            if (name != "" && email != "" && message != "") {
+
+                Email.send({
+                    SecureToken: "e23f3634-7210-413f-9825-e5ea1ae90db6",
+                    Host: "mail.maqamstudios.com",
+                    Username: "info@maqamstudios.com",
+                    Password: "maqamstudios",
+                    To: "info@maqamstudios.com",
+                    From: email + "",
+                    Subject: "maqam website message",
+                    Body: message + "",
+                }).then(
+
+
+                );
+            } else {
+                alert("Please Fill Fields Correctly");
+                console.log('kdshd');
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

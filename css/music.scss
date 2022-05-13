@@ -1,0 +1,243 @@
+.music-card {
+    height: 100px;
+    width: 100px;
+    border-radius: 16px;
+    -webkit-box-shadow: 1rem 0 3rem #000;
+    box-shadow: 1rem 0 3rem #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: .2s;
+    transition: .2s;
+    margin: 0;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    background-color: black;
+}
+
+.music-card-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 3rem;
+}
+
+.music-card:focus-within~.music-card,
+.music-card:hover~.music-card {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+.music-card:hover {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.music-card:not(:first-child) {
+    margin-left: -50px;
+}
+
+#music-gramophone {
+    margin: 120px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.music-disk1,
+.music-disk2,
+.music-disk3,
+.music-disk4,
+.music-disk5,
+.music-disk6,
+.music-disk7,
+.music-disk8,
+.music-disk9,
+.music-disk10,
+.music-disk11,
+.music-disk12,
+.music-disk13,
+.music-disk14,
+.music-disk15,
+.music-disk16 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*visibility: hidden;*/
+}
+
+.music-disk1 :hover,
+.music-disk2 :hover,
+.music-disk3 :hover,
+.music-disk4 :hover,
+.music-disk5 :hover,
+.music-disk6 :hover,
+.music-disk7 :hover,
+.music-disk8 :hover,
+.music-disk9 :hover,
+.music-disk10 :hover,
+.music-disk11 :hover,
+.music-disk12 :hover,
+.music-disk13 :hover,
+.music-disk14 :hover,
+.music-disk15 :hover,
+.music-disk16 :hover {
+    cursor: pointer;
+}
+
+.dropzone {
+    position: relative;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    right: 0px;
+    left: 0px;
+}
+
+.music-title1,
+.music-title2,
+.music-title3,
+.music-title4,
+.music-title5,
+.music-title6,
+.music-title7,
+.music-title8,
+.music-title9,
+.music-title10,
+.music-title11,
+.music-title12,
+.music-title13,
+.music-title14,
+.music-title15,
+.music-title16 {
+    -webkit-transform: rotate(90deg) translateX(200px) !important;
+    transform: rotate(90deg) translateX(200px) !important;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    z-index: 111;
+}
+
+.music-title-hovered {
+    opacity: 1;
+    letter-spacing: 1.7em;
+}
+
+.music-title-played {
+    opacity: 1;
+    letter-spacing: 1.7em;
+}
+
+.music-section-title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    padding-top: 50px;
+    text-transform: capitalize;
+}
+
+.music-section-title-hr {
+    border: 1px solid red;
+    width: 70px;
+}
+
+.music-section-maqam-lion {
+    position: fixed;
+    opacity: 0.2;
+    width: 1900px;
+    height: 1700px;
+    top: 0;
+    left: -800px;
+}
+
+.music-section-maqam-gramphone {
+    position: fixed;
+    opacity: 0.2;
+    width: 1200px;
+    height: 1600px;
+    top: -190px;
+    right: -400px;
+    z-index: -111;
+}
+
+.music-dragging-caption {
+    position: fixed;
+    bottom: 50px;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    right: 45%;
+    opacity: 0.5;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+}
+
+
+/*# sourceMappingURL=style.css.map */

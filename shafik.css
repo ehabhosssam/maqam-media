@@ -1,0 +1,188 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import url(https://fonts.googleapis.com/css2?family=Tajawal:wght@500&family=Ubuntu:ital,wght@1,500&display=swap);
+.video-title {
+    position: absolute;
+    font-size: 110px;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.658);
+    color: transparent;
+    transform-style: preserve-3d;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    top: 5%;
+    left: 2%;
+    /* padding: 28%; */
+    width: 100%;
+}
+
+video {
+    transform-style: preserve-3d;
+}
+
+.movies-layer-hidden {
+    display: none;
+}
+
+.border-layer {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.border-layer-bottomleft::after {
+    content: "";
+    border-top: 3px solid rgb(255, 255, 255);
+    width: 97%;
+    height: 20%;
+    left: -70%;
+    position: absolute;
+    margin: 20px;
+    top: -103%;
+    transform: rotateZ(90deg);
+}
+
+.border-layer-bottomleft {
+    border-top: 3px solid rgb(255, 255, 255);
+    width: 20%;
+    height: 20%;
+    left: -6%;
+    position: absolute;
+    margin: 20px;
+    bottom: -15%;
+}
+
+.border-layer-upleft {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 20%;
+    height: 20%;
+    right: -6%;
+    position: absolute;
+    margin: 20px;
+    top: -30%;
+}
+
+.border-layer-upleft::after {
+    content: "";
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 96%;
+    height: 20%;
+    right: -69%;
+    position: absolute;
+    margin: 20px;
+    top: 136%;
+    transform: rotateZ(90deg);
+}
+
+.border-layer-upright {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 20%;
+    height: 20%;
+    left: -6%;
+    position: absolute;
+    margin: 20px;
+    top: -30%;
+}
+
+.border-layer-upright::after {
+    content: "";
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 97%;
+    height: 20%;
+    left: -55%;
+    position: absolute;
+    margin: 20px;
+    top: 137%;
+    transform: rotateZ(90deg);
+}
+
+.border-layer-bottomright {
+    border-top: 3px solid rgb(255, 255, 255);
+    width: 20%;
+    height: 20%;
+    right: -6%;
+    position: absolute;
+    margin: 20px;
+    bottom: -15%;
+}
+
+.border-layer-bottomright::after {
+    content: "";
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 97%;
+    height: 20%;
+    left: 43%;
+    position: absolute;
+    margin: 20px;
+    top: -104%;
+    transform: rotateZ(90deg);
+}
+
+.video-media {
+    /* height: 50%;
+    width: 35%;
+    transform-style: preserve-3d;
+    margin: -12px auto;
+    position: fixed;
+    perspective: 2600px;
+    left: 35%;
+    bottom: 12%; */
+    height: 50%;
+    width: 35%;
+    /* transform-style: preserve-3d; */
+    margin: -12px auto;
+    position: fixed;
+    /* perspective: 2600px; */
+    /* transform: translateX(20%) !important; */
+    left: 8%;
+    bottom: 20%;
+}
+
+.video-holder {
+    height: 100vh !important;
+    width: 100vw !important;
+    perspective: 2600px;
+    /* background-color: #000; */
+}
+
+.video-button {
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #8d8d8d60;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+    transition-property: height, width, background-color, -webkit-backdrop-filter;
+    transition-property: height, width, backdrop-filter, background-color;
+    transition-property: height, width, backdrop-filter, background-color, -webkit-backdrop-filter;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border: none;
+    color: #fff;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    display: none;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.widthfull {
+    height: 100% !important;
+    width: 100% !important;
+    transform-style: preserve-3d;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* transform: translateX(20%) !important; */
+}
